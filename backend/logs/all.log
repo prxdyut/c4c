@@ -679,3 +679,29 @@
 2025-07-07 10:33:01:331 [35mhttp[39m: [35mGET /uploads/1751884155911-960550160.jpg 304 1ms[39m
 2025-07-07 10:33:02:332 [35mhttp[39m: [35mGET /uploads/1751884155920-54111289.jpg 304 1ms[39m
 2025-07-07 10:33:02:332 [35mhttp[39m: [35mGET /uploads/1751884155911-960550160.jpg 304 1ms[39m
+2025-07-07 10:40:29:4029 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 10:40:35:4035 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 10:40:35:4035 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 6555ms[39m
+2025-07-07 10:40:44:4044 [32minfo[39m: [32mGenerating animal profile[39m
+2025-07-07 10:40:44:4044 [32minfo[39m: [32mProcessed 2 image files[39m
+2025-07-07 10:40:51:4051 [32minfo[39m: [32mProfile generated successfully for Coco[39m
+2025-07-07 10:40:51:4051 [35mhttp[39m: [35mPOST /api/animals/generate-profile 200 6784ms[39m
+2025-07-07 10:40:51:4051 [35mhttp[39m: [35mGET /uploads/1751884844719-79202271.jpg 200 4ms[39m
+2025-07-07 10:40:51:4051 [35mhttp[39m: [35mGET /uploads/1751884844728-903681687.jpg 200 3ms[39m
+2025-07-07 10:40:54:4054 [35mhttp[39m: [35mGET /uploads/1751884844719-79202271.jpg 304 1ms[39m
+2025-07-07 10:40:54:4054 [35mhttp[39m: [35mGET /uploads/1751884844728-903681687.jpg 304 3ms[39m
+2025-07-07 10:40:54:4054 [35mhttp[39m: [35mGET /uploads/1751884844719-79202271.jpg 304 1ms[39m
+2025-07-07 10:40:54:4054 [35mhttp[39m: [35mGET /uploads/1751884844728-903681687.jpg 304 1ms[39m
+2025-07-07 10:43:24:4324 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 10:43:29:4329 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 10:43:29:4329 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 4408ms[39m
+2025-07-07 10:45:02:452 [32minfo[39m: [32mGenerating animal profile[39m
+2025-07-07 10:45:02:452 [32minfo[39m: [32mProcessed 2 image files[39m
+2025-07-07 10:45:05:455 [32minfo[39m: [32mProfile generated successfully for Avra[39m
+2025-07-07 10:45:05:455 [35mhttp[39m: [35mPOST /api/animals/generate-profile 200 3373ms[39m
+2025-07-07 10:45:05:455 [35mhttp[39m: [35mGET /uploads/1751885102037-160144373.jpg 200 7ms[39m
+2025-07-07 10:45:05:455 [35mhttp[39m: [35mGET /uploads/1751885102092-857429992.jpg 200 3ms[39m
+2025-07-07 10:45:17:4517 [35mhttp[39m: [35mGET /uploads/1751885102037-160144373.jpg 304 0ms[39m
+2025-07-07 10:45:17:4517 [35mhttp[39m: [35mGET /uploads/1751885102092-857429992.jpg 304 1ms[39m
+2025-07-07 10:45:17:4517 [35mhttp[39m: [35mGET /uploads/1751885102037-160144373.jpg 304 0ms[39m
+2025-07-07 10:45:17:4517 [35mhttp[39m: [35mGET /uploads/1751885102092-857429992.jpg 304 1ms[39m

@@ -7,6 +7,8 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import CreateProfile from "./pages/CreateProfile";
 import React, { useState, useEffect } from 'react';
+import CreativeLoader from "./components/CreativeLoader";
+import CreateAnimalProfile from "./pages/CreateAnimalProfile";
 
 const queryClient = new QueryClient();
 
@@ -28,8 +30,6 @@ const App = () => {
             <BrowserRouter>
               <Routes>
                 <Route path="/" element={<Index />} />
-                <Route path="/create" element={<CreateProfile />} />
-                <Route path="/analyze" element={<AnalyzeImage />} />
                 <Route path="/create-animal" element={<CreateAnimalProfile />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
