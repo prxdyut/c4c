@@ -1,0 +1,681 @@
+2025-07-07 07:54:29:5429 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 07:54:57:5457 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 07:54:57:5457 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 07:54:57:5457 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 07:54:57:5457 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 07:55:16:5516 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 07:55:16:5516 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 07:55:16:5516 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 07:55:16:5516 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 07:55:16:5516 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 07:55:16:5516 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 07:55:25:5525 [32minfo[39m: [32mGenerating animal profile[39m
+2025-07-07 07:55:28:5528 [32minfo[39m: [32mProfile generated successfully for coco[39m
+2025-07-07 07:55:28:5528 [35mhttp[39m: [35mPOST /api/animals/generate-profile 200 3097ms[39m
+2025-07-07 07:55:28:5528 [37mdebug[39m: [37mRequest body: {"name":"coco","type":"dog","age":"4years","gender":"male","temperament":"friendlty","healthNotes":"","backstory":"","idealHome":""}[39m
+2025-07-07 07:55:46:5546 [32minfo[39m: [32mProcessing image from path: uploads/1751874946106-images.jpg[39m
+2025-07-07 07:55:46:5546 [37mdebug[39m: [37mCalling OpenAI Vision API for image analysis[39m
+2025-07-07 07:55:46:5546 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 07:55:46:5546 [31merror[39m: [31mPOST /api/animals/analyze-image 500 473ms[39m
+2025-07-07 07:59:38:5938 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 07:59:38:5938 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 07:59:38:5938 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 07:59:38:5938 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 07:59:38:5938 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 07:59:38:5938 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 07:59:49:5949 [32minfo[39m: [32mProcessing image from path: uploads/1751875189526-images.jpg[39m
+2025-07-07 07:59:49:5949 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 07:59:50:5950 [31merror[39m: [31mOpenAI API error:[39m
+2025-07-07 07:59:50:5950 [31merror[39m: [31mError in analyzeLocalImage:[39m
+2025-07-07 07:59:50:5950 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 07:59:50:5950 [31merror[39m: [31mPOST /api/animals/analyze-image 500 569ms[39m
+2025-07-07 08:00:15:015 [32minfo[39m: [32mProcessing image from path: uploads/1751875215954-images.jpg[39m
+2025-07-07 08:00:15:015 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:00:16:016 [31merror[39m: [31mOpenAI API error:[39m
+2025-07-07 08:00:16:016 [31merror[39m: [31mError in analyzeLocalImage:[39m
+2025-07-07 08:00:16:016 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:00:16:016 [31merror[39m: [31mPOST /api/animals/analyze-image 500 465ms[39m
+2025-07-07 08:01:35:135 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:01:35:135 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:01:35:135 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:01:35:135 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:01:35:135 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:01:35:135 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:02:00:20 [32minfo[39m: [32mProcessing image from path: uploads/1751875320606-images.jpg[39m
+2025-07-07 08:02:00:20 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:02:01:21 [37mdebug[39m: [37mRaw API Response:[39m
+2025-07-07 08:02:01:21 [31merror[39m: [31mOpenAI API error:[39m
+2025-07-07 08:02:01:21 [31merror[39m: [31mError in analyzeLocalImage:[39m
+2025-07-07 08:02:01:21 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:02:01:21 [31merror[39m: [31mPOST /api/animals/analyze-image 500 548ms[39m
+2025-07-07 08:03:01:31 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:03:01:31 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:03:01:31 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:03:01:31 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:03:01:31 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:03:01:31 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:03:06:36 [32minfo[39m: [32mProcessing image from path: uploads/1751875386868-images.jpg[39m
+2025-07-07 08:03:06:36 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:03:07:37 [37mdebug[39m: [37mRaw API Response:[39m
+2025-07-07 08:03:07:37 [31merror[39m: [31mOpenAI API error:[39m
+2025-07-07 08:03:07:37 [31merror[39m: [31mError in analyzeLocalImage:[39m
+2025-07-07 08:03:07:37 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:03:07:37 [31merror[39m: [31mPOST /api/animals/analyze-image 500 373ms[39m
+2025-07-07 08:04:15:415 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:04:15:415 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:04:15:415 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:04:15:415 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:04:15:415 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:04:15:415 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:04:29:429 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:04:29:429 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:04:29:429 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:04:29:429 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:04:29:429 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:04:29:429 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:04:42:442 [32minfo[39m: [32mProcessing image from path: uploads/1751875482776-images.jpg[39m
+2025-07-07 08:04:42:442 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:04:42:442 [37mdebug[39m: [37mRequest body prepared:[39m
+2025-07-07 08:04:43:443 [37mdebug[39m: [37mRaw API Response:[39m
+2025-07-07 08:04:43:443 [31merror[39m: [31mOpenAI API error:[39m
+2025-07-07 08:04:43:443 [31merror[39m: [31mError in analyzeLocalImage:[39m
+2025-07-07 08:04:43:443 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:04:43:443 [31merror[39m: [31mPOST /api/animals/analyze-image 500 1072ms[39m
+2025-07-07 08:05:03:53 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:05:03:53 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:05:03:53 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:05:03:53 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:05:03:53 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:05:03:53 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:05:05:55 [32minfo[39m: [32mProcessing image from path: uploads/1751875505408-images.jpg[39m
+2025-07-07 08:05:05:55 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:05:05:55 [37mdebug[39m: [37mRequest body prepared:[39m
+2025-07-07 08:05:07:57 [37mdebug[39m: [37mRaw API Response:[39m
+2025-07-07 08:05:07:57 [31merror[39m: [31mOpenAI API error:[39m
+2025-07-07 08:05:07:57 [31merror[39m: [31mError in analyzeLocalImage:[39m
+2025-07-07 08:05:07:57 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:05:07:57 [31merror[39m: [31mPOST /api/animals/analyze-image 500 1721ms[39m
+2025-07-07 08:05:30:530 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:05:30:530 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:05:30:530 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:05:30:530 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:05:30:530 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:05:30:530 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:05:36:536 [32minfo[39m: [32mProcessing image from path: uploads/1751875536656-images.jpg[39m
+2025-07-07 08:05:36:536 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:05:36:536 [37mdebug[39m: [37mRequest body prepared:[39m
+2025-07-07 08:05:39:539 [37mdebug[39m: [37mRaw API Response:[39m
+2025-07-07 08:05:39:539 [37mdebug[39m: [37mReceived valid response from OpenAI Vision API[39m
+2025-07-07 08:05:39:539 [31merror[39m: [31mError parsing OpenAI response:[39m
+2025-07-07 08:05:39:539 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:05:39:539 [31merror[39m: [31mPOST /api/animals/analyze-image 500 2399ms[39m
+2025-07-07 08:06:50:650 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:06:50:650 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:06:51:651 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:06:51:651 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:06:51:651 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:06:51:651 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:09:32:932 [32minfo[39m: [32mProcessing image from path: uploads/1751875772168-images.jpg[39m
+2025-07-07 08:09:32:932 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:09:33:933 [37mdebug[39m: [37mParsed analysis:[39m
+2025-07-07 08:09:33:933 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:09:33:933 [31merror[39m: [31mPOST /api/animals/analyze-image 500 1817ms[39m
+2025-07-07 08:10:53:1053 [32minfo[39m: [32mProcessing image from path: uploads/1751875853554-images.jpg[39m
+2025-07-07 08:10:53:1053 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:10:55:1055 [37mdebug[39m: [37mParsed analysis:[39m
+2025-07-07 08:10:55:1055 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:10:55:1055 [31merror[39m: [31mPOST /api/animals/analyze-image 500 1656ms[39m
+2025-07-07 08:12:44:1244 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:12:44:1244 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:12:44:1244 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:12:44:1244 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:12:44:1244 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:12:44:1244 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:12:53:1253 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:12:53:1253 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:12:53:1253 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:12:53:1253 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:12:53:1253 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:12:53:1253 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:15:08:158 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:15:08:158 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:15:08:158 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:15:08:158 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:15:08:158 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:15:08:158 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:15:25:1525 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:15:25:1525 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:15:25:1525 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:15:25:1525 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:15:25:1525 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:15:25:1525 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:16:31:1631 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:16:31:1631 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:16:32:1632 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:16:32:1632 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:16:32:1632 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:16:32:1632 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:17:46:1746 [32minfo[39m: [32mProcessing image from path: uploads/1751876266540-images.jpg[39m
+2025-07-07 08:17:46:1746 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:17:48:1748 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:17:48:1748 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:17:48:1748 [31merror[39m: [31mPOST /api/animals/analyze-image 500 2396ms[39m
+2025-07-07 08:18:07:187 [32minfo[39m: [32mProcessing image from path: uploads/1751876287470-images.jpg[39m
+2025-07-07 08:18:07:187 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:18:10:1810 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:18:10:1810 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:18:10:1810 [31merror[39m: [31mPOST /api/animals/analyze-image 500 3232ms[39m
+2025-07-07 08:18:47:1847 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:18:47:1847 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:18:47:1847 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:18:47:1847 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:18:47:1847 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:18:47:1847 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:19:05:195 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:19:05:195 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:19:05:195 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:19:05:195 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:19:05:195 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:19:05:195 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:19:14:1914 [32minfo[39m: [32mProcessing image from path: uploads/1751876354371-images.jpg[39m
+2025-07-07 08:19:14:1914 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:19:16:1916 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:19:16:1916 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:19:16:1916 [31merror[39m: [31mPOST /api/animals/analyze-image 500 2524ms[39m
+2025-07-07 08:20:55:2055 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:20:55:2055 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:20:55:2055 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:20:55:2055 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:20:55:2055 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:20:55:2055 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:20:59:2059 [32minfo[39m: [32mProcessing image from path: uploads/1751876459357-images.jpg[39m
+2025-07-07 08:20:59:2059 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:21:02:212 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:21:02:212 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 2738ms[39m
+2025-07-07 08:21:17:2117 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:21:17:2117 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:21:17:2117 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:21:17:2117 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:21:17:2117 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:21:17:2117 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:21:32:2132 [32minfo[39m: [32mProcessing image from path: uploads/1751876492584-images.jpg[39m
+2025-07-07 08:21:32:2132 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:21:34:2134 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:21:34:2134 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 2302ms[39m
+2025-07-07 08:21:39:2139 [32minfo[39m: [32mProcessing image from path: uploads/1751876499802-nuCsxURy.jpg[39m
+2025-07-07 08:21:39:2139 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:21:43:2143 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:21:43:2143 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 4186ms[39m
+2025-07-07 08:24:33:2433 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:24:33:2433 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:24:33:2433 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:24:33:2433 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:24:33:2433 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:24:33:2433 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:24:50:2450 [32minfo[39m: [32mProcessing image from path: uploads/1751876690460-nuCsxURy.jpg[39m
+2025-07-07 08:24:50:2450 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:24:50:2450 [31merror[39m: [31mError in analyzeLocalImage:[39m
+2025-07-07 08:24:50:2450 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:24:50:2450 [31merror[39m: [31mPOST /api/animals/analyze-image 500 31ms[39m
+2025-07-07 08:25:32:2532 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:25:32:2532 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:25:32:2532 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:25:32:2532 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:25:32:2532 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:25:32:2532 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:25:33:2533 [32minfo[39m: [32mProcessing image from path: uploads/1751876733723-nuCsxURy.jpg[39m
+2025-07-07 08:25:33:2533 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:25:33:2533 [31merror[39m: [31mError in analyzeLocalImage:[39m
+2025-07-07 08:25:33:2533 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:25:33:2533 [31merror[39m: [31mPOST /api/animals/analyze-image 500 28ms[39m
+2025-07-07 08:25:54:2554 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:25:54:2554 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:25:54:2554 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:25:54:2554 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:25:54:2554 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:25:54:2554 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:25:56:2556 [32minfo[39m: [32mProcessing image from path: uploads/1751876756244-nuCsxURy.jpg[39m
+2025-07-07 08:25:56:2556 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:25:56:2556 [31merror[39m: [31mError in analyzeLocalImage:[39m
+2025-07-07 08:25:56:2556 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:25:56:2556 [31merror[39m: [31mPOST /api/animals/analyze-image 500 554ms[39m
+2025-07-07 08:26:21:2621 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:26:21:2621 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:26:21:2621 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:26:21:2621 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:26:21:2621 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:26:21:2621 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:26:27:2627 [32minfo[39m: [32mProcessing image from path: uploads/1751876787104-nuCsxURy.jpg[39m
+2025-07-07 08:26:27:2627 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:26:30:2630 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:26:30:2630 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:26:30:2630 [31merror[39m: [31mPOST /api/animals/analyze-image 500 2978ms[39m
+2025-07-07 08:26:45:2645 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:26:45:2645 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:26:45:2645 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:26:45:2645 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:26:45:2645 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:26:45:2645 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:26:47:2647 [32minfo[39m: [32mProcessing image from path: uploads/1751876807357-nuCsxURy.jpg[39m
+2025-07-07 08:26:47:2647 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:26:52:2652 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:26:52:2652 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:26:52:2652 [31merror[39m: [31mPOST /api/animals/analyze-image 500 5569ms[39m
+2025-07-07 08:27:26:2726 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:27:26:2726 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:27:26:2726 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:27:26:2726 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:27:26:2726 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:27:26:2726 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:27:28:2728 [32minfo[39m: [32mProcessing image from path: uploads/1751876848718-nuCsxURy.jpg[39m
+2025-07-07 08:27:28:2728 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:27:31:2731 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:27:31:2731 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 2660ms[39m
+2025-07-07 08:27:40:2740 [32minfo[39m: [32mProcessing image from path: uploads/1751876860523-nuCsxURy.jpg[39m
+2025-07-07 08:27:40:2740 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:27:42:2742 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:27:42:2742 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 2198ms[39m
+2025-07-07 08:28:20:2820 [32minfo[39m: [32mProcessing image from path: uploads/1751876900176-nuCsxURy.jpg[39m
+2025-07-07 08:28:20:2820 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:28:22:2822 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:28:22:2822 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 2043ms[39m
+2025-07-07 08:29:08:298 [32minfo[39m: [32mProcessing image from path: uploads/1751876948477-nuCsxURy.jpg[39m
+2025-07-07 08:29:08:298 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:29:10:2910 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:29:10:2910 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 2023ms[39m
+2025-07-07 08:30:34:3034 [32minfo[39m: [32mProcessing image from path: uploads/1751877034430-nuCsxURy.jpg[39m
+2025-07-07 08:30:34:3034 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:30:36:3036 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:30:36:3036 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 1990ms[39m
+2025-07-07 08:32:14:3214 [32minfo[39m: [32mProcessing image from path: uploads/1751877134138-OCivnk4Y.jpg[39m
+2025-07-07 08:32:14:3214 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:32:16:3216 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:32:16:3216 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 2596ms[39m
+2025-07-07 08:33:46:3346 [32minfo[39m: [32mProcessing image from path: uploads/1751877226972-OCivnk4Y.jpg[39m
+2025-07-07 08:33:46:3346 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:33:49:3349 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:33:49:3349 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 2525ms[39m
+2025-07-07 08:36:01:361 [32minfo[39m: [32mProcessing image from path: uploads/1751877361853-nuCsxURy.jpg[39m
+2025-07-07 08:36:01:361 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:36:04:364 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:36:04:364 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 2480ms[39m
+2025-07-07 08:40:07:407 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:40:07:407 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:40:07:407 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:40:07:407 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:40:07:407 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:40:07:407 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:40:23:4023 [32minfo[39m: [32mProcessing image from path: uploads/1751877623811-nuCsxURy.jpg[39m
+2025-07-07 08:40:23:4023 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:40:26:4026 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:40:26:4026 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 2383ms[39m
+2025-07-07 08:44:19:4419 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:44:19:4419 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:44:19:4419 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:44:19:4419 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:44:19:4419 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:44:19:4419 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:44:33:4433 [31merror[39m: [31mUnhandled error:[39m
+2025-07-07 08:44:33:4433 [31merror[39m: [31mPOST /api/animals/analyze-image 500 11ms[39m
+2025-07-07 08:49:13:4913 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:49:13:4913 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:49:13:4913 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:49:13:4913 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:49:13:4913 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:49:13:4913 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:49:26:4926 [32minfo[39m: [32mProcessing image from path: uploads/1751878166411-nuCsxURy.jpg[39m
+2025-07-07 08:49:26:4926 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:49:26:4926 [32minfo[39m: [32mProcessing image from path: uploads/1751878166598-OCivnk4Y.jpg[39m
+2025-07-07 08:49:26:4926 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:49:29:4929 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:49:30:4930 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:49:30:4930 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 4272ms[39m
+2025-07-07 08:51:56:5156 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:51:56:5156 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:51:56:5156 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:51:56:5156 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:51:56:5156 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:51:56:5156 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:51:59:5159 [32minfo[39m: [32mProcessing image from path: uploads/1751878319665-nuCsxURy.jpg[39m
+2025-07-07 08:51:59:5159 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:51:59:5159 [32minfo[39m: [32mProcessing image from path: uploads/1751878319668-OCivnk4Y.jpg[39m
+2025-07-07 08:51:59:5159 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:52:01:521 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:52:04:524 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:52:04:524 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 4416ms[39m
+2025-07-07 08:52:47:5247 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:52:47:5247 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:52:47:5247 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:52:47:5247 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:52:47:5247 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:52:47:5247 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:54:38:5438 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 08:54:38:5438 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 08:54:38:5438 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 08:54:38:5438 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 08:54:38:5438 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 08:54:38:5438 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 08:54:41:5441 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:54:44:5444 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:54:44:5444 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 2235ms[39m
+2025-07-07 08:55:48:5548 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:55:52:5552 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:55:52:5552 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 4024ms[39m
+2025-07-07 08:56:46:5646 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:56:49:5649 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:56:49:5649 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 2459ms[39m
+2025-07-07 08:57:17:5717 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:57:20:5720 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:57:20:5720 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 3145ms[39m
+2025-07-07 08:58:42:5842 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 08:58:44:5844 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 08:58:44:5844 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 2329ms[39m
+2025-07-07 09:05:32:532 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 09:05:32:532 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 09:05:32:532 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 09:05:32:532 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 09:05:32:532 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 09:05:32:532 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 09:05:41:541 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 09:05:45:545 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 09:05:45:545 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 3786ms[39m
+2025-07-07 09:07:41:741 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 09:07:41:741 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 09:07:41:741 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 09:07:41:741 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 09:07:41:741 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 09:07:41:741 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 09:08:09:89 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 09:08:09:89 [31merror[39m: [31mError in analyzeLocalImage:[39m
+2025-07-07 09:08:09:89 [31merror[39m: [31mError analyzing images:[39m
+2025-07-07 09:08:09:89 [31merror[39m: [31mPOST /api/animals/analyze-image 500 58ms[39m
+2025-07-07 09:10:44:1044 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 09:10:44:1044 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 09:10:44:1044 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 09:10:44:1044 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 09:10:44:1044 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 09:10:44:1044 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 09:10:49:1049 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 09:10:56:1056 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 09:10:56:1056 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 7378ms[39m
+2025-07-07 09:12:50:1250 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 09:12:54:1254 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 09:12:54:1254 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 4171ms[39m
+2025-07-07 09:13:51:1351 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 09:13:55:1355 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 09:13:55:1355 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 3648ms[39m
+2025-07-07 09:15:36:1536 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 09:15:36:1536 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 09:15:36:1536 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 09:15:36:1536 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 09:15:36:1536 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 09:15:36:1536 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 09:16:51:1651 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 09:16:51:1651 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 09:16:51:1651 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 09:16:51:1651 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 09:16:52:1652 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 09:16:52:1652 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 09:17:04:174 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 09:17:04:174 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 09:17:04:174 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 09:17:04:174 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 09:17:04:174 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 09:17:04:174 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 09:22:01:221 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 09:22:01:221 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 09:22:01:221 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 09:22:01:221 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 09:22:01:221 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 09:22:01:221 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 09:22:30:2230 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 09:22:30:2230 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 09:22:30:2230 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 09:22:30:2230 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 09:22:30:2230 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 09:22:30:2230 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 09:23:38:2338 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 09:23:42:2342 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 09:23:42:2342 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 3912ms[39m
+2025-07-07 09:31:38:3138 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 09:31:41:3141 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 09:31:41:3141 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 3364ms[39m
+2025-07-07 09:32:56:3256 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 09:32:56:3256 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 09:32:56:3256 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 09:32:56:3256 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 09:32:56:3256 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 09:32:56:3256 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 09:33:06:336 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 09:33:15:3315 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 09:33:15:3315 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 9689ms[39m
+2025-07-07 09:33:56:3356 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 09:34:02:342 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 09:34:02:342 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 5529ms[39m
+2025-07-07 09:35:29:3529 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 09:35:29:3529 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 09:35:29:3529 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 09:35:29:3529 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 09:35:29:3529 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 09:35:29:3529 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 09:36:57:3657 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 09:36:57:3657 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 09:36:57:3657 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 09:36:57:3657 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 09:36:57:3657 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 09:36:57:3657 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 09:40:06:406 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 09:40:11:4011 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 09:40:11:4011 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 5102ms[39m
+2025-07-07 09:43:55:4355 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 09:43:55:4355 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 09:43:55:4355 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 09:43:55:4355 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 09:43:55:4355 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 09:43:55:4355 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 09:44:16:4416 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 09:44:16:4416 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 09:44:16:4416 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 09:44:16:4416 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 09:44:16:4416 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 09:44:16:4416 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 09:44:33:4433 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 09:44:42:4442 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 09:44:42:4442 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 9532ms[39m
+2025-07-07 09:46:01:461 [32minfo[39m: [32mGenerating animal profile[39m
+2025-07-07 09:46:03:463 [32minfo[39m: [32mProfile generated successfully for undefined[39m
+2025-07-07 09:46:03:463 [31merror[39m: [31mError generating profile:[39m
+2025-07-07 09:46:03:463 [31merror[39m: [31mPOST /api/animals/generate-profile 500 2056ms[39m
+2025-07-07 09:47:30:4730 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 09:47:30:4730 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 09:47:30:4730 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 09:47:30:4730 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 09:47:30:4730 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 09:47:30:4730 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 09:47:32:4732 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 09:47:47:4747 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 09:47:47:4747 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 15185ms[39m
+2025-07-07 09:47:51:4751 [32minfo[39m: [32mGenerating animal profile[39m
+2025-07-07 09:47:54:4754 [32minfo[39m: [32mProfile generated successfully for undefined[39m
+2025-07-07 09:47:54:4754 [31merror[39m: [31mError generating profile:[39m
+2025-07-07 09:47:54:4754 [31merror[39m: [31mPOST /api/animals/generate-profile 500 3006ms[39m
+2025-07-07 09:48:36:4836 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 09:48:36:4836 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 09:48:36:4836 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 09:48:36:4836 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 09:48:36:4836 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 09:48:36:4836 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 09:48:47:4847 [32minfo[39m: [32mGenerating animal profile[39m
+2025-07-07 09:48:50:4850 [32minfo[39m: [32mProfile generated successfully for undefined[39m
+2025-07-07 09:48:50:4850 [31merror[39m: [31mError generating profile:[39m
+2025-07-07 09:48:50:4850 [31merror[39m: [31mPOST /api/animals/generate-profile 500 2575ms[39m
+2025-07-07 09:50:13:5013 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 09:50:13:5013 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 09:50:13:5013 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 09:50:13:5013 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 09:50:13:5013 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 09:50:13:5013 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 09:50:25:5025 [32minfo[39m: [32mGenerating animal profile[39m
+2025-07-07 09:50:29:5029 [32minfo[39m: [32mProfile generated successfully for undefined[39m
+2025-07-07 09:50:29:5029 [31merror[39m: [31mError generating profile:[39m
+2025-07-07 09:50:29:5029 [31merror[39m: [31mPOST /api/animals/generate-profile 500 3550ms[39m
+2025-07-07 09:52:57:5257 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 09:52:57:5257 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 09:52:57:5257 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 09:52:57:5257 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 09:52:57:5257 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 09:52:57:5257 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 09:53:53:5353 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 09:53:53:5353 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 09:53:53:5353 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 09:53:53:5353 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 09:53:53:5353 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 09:53:53:5353 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 09:53:59:5359 [32minfo[39m: [32mGenerating animal profile[39m
+2025-07-07 09:54:01:541 [32minfo[39m: [32mProfile generated successfully for undefined[39m
+2025-07-07 09:54:01:541 [31merror[39m: [31mError generating profile:[39m
+2025-07-07 09:54:01:541 [31merror[39m: [31mPOST /api/animals/generate-profile 500 2807ms[39m
+2025-07-07 09:54:11:5411 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 09:54:11:5411 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 09:54:11:5411 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 09:54:11:5411 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 09:54:11:5411 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 09:54:11:5411 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 09:54:17:5417 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 09:54:17:5417 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 09:54:17:5417 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 09:54:17:5417 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 09:54:17:5417 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 09:54:17:5417 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 09:54:19:5419 [32minfo[39m: [32mGenerating animal profile[39m
+2025-07-07 09:54:22:5422 [32minfo[39m: [32mProfile generated successfully for undefined[39m
+2025-07-07 09:54:22:5422 [31merror[39m: [31mError generating profile:[39m
+2025-07-07 09:54:22:5422 [31merror[39m: [31mPOST /api/animals/generate-profile 500 2591ms[39m
+2025-07-07 09:58:17:5817 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 09:58:17:5817 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 09:58:17:5817 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 09:58:17:5817 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 09:58:17:5817 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 09:58:17:5817 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 09:58:40:5840 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 09:58:40:5840 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 09:58:40:5840 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 09:58:40:5840 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 09:58:40:5840 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 09:58:40:5840 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 09:58:55:5855 [32minfo[39m: [32mGenerating animal profile[39m
+2025-07-07 09:58:55:5855 [32minfo[39m: [32mProcessed 2 image files[39m
+2025-07-07 09:58:58:5858 [32minfo[39m: [32mProfile generated successfully for coco[39m
+2025-07-07 09:58:58:5858 [35mhttp[39m: [35mPOST /api/animals/generate-profile 200 2924ms[39m
+2025-07-07 10:00:56:056 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 10:00:56:056 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 10:00:56:056 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 10:00:56:056 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 10:00:56:056 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 10:00:56:056 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 10:01:29:129 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 10:01:29:129 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 10:01:29:129 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 10:01:29:129 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 10:01:29:129 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 10:01:29:129 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 10:04:53:453 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 10:04:53:453 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 10:04:53:453 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 10:04:53:453 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 10:04:53:453 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 10:04:53:453 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 10:05:30:530 [32minfo[39m: [32mAnimalController initialized with OpenAI configuration[39m
+2025-07-07 10:05:30:530 [33mwarn[39m: [33mMONGODB_URI not found in .env, using default: mongodb://localhost:27017/openpaws[39m
+2025-07-07 10:05:30:530 [32minfo[39m: [32mServer is running on port 3005[39m
+2025-07-07 10:05:30:530 [32minfo[39m: [32mConnecting to MongoDB...[39m
+2025-07-07 10:05:30:530 [32minfo[39m: [32mConnected to MongoDB successfully[39m
+2025-07-07 10:05:30:530 [32minfo[39m: [32mDatabase initialized successfully[39m
+2025-07-07 10:05:38:538 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 10:05:45:545 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 10:05:45:545 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 7133ms[39m
+2025-07-07 10:06:02:62 [32minfo[39m: [32mGenerating animal profile[39m
+2025-07-07 10:06:02:62 [32minfo[39m: [32mProcessed 2 image files[39m
+2025-07-07 10:06:05:65 [32minfo[39m: [32mProfile generated successfully for Coco[39m
+2025-07-07 10:06:05:65 [35mhttp[39m: [35mPOST /api/animals/generate-profile 200 3183ms[39m
+2025-07-07 10:06:24:624 [35mhttp[39m: [35mGET /uploads/1751882762701-454553212.jpg 200 8ms[39m
+2025-07-07 10:06:24:624 [33mwarn[39m: [33mGET /favicon.ico 404 2ms[39m
+2025-07-07 10:09:31:931 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 10:09:37:937 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 10:09:37:937 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 5526ms[39m
+2025-07-07 10:09:52:952 [32minfo[39m: [32mGenerating animal profile[39m
+2025-07-07 10:09:52:952 [32minfo[39m: [32mProcessed 2 image files[39m
+2025-07-07 10:09:55:955 [32minfo[39m: [32mProfile generated successfully for coco[39m
+2025-07-07 10:09:55:955 [35mhttp[39m: [35mPOST /api/animals/generate-profile 200 2659ms[39m
+2025-07-07 10:11:50:1150 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 10:11:55:1155 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 10:11:55:1155 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 4798ms[39m
+2025-07-07 10:11:59:1159 [32minfo[39m: [32mGenerating animal profile[39m
+2025-07-07 10:11:59:1159 [32minfo[39m: [32mProcessed 1 image files[39m
+2025-07-07 10:12:05:125 [32minfo[39m: [32mProfile generated successfully for coco[39m
+2025-07-07 10:12:05:125 [35mhttp[39m: [35mPOST /api/animals/generate-profile 200 6407ms[39m
+2025-07-07 10:12:55:1255 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 10:13:00:130 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 10:13:00:130 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 5351ms[39m
+2025-07-07 10:13:09:139 [32minfo[39m: [32mGenerating animal profile[39m
+2025-07-07 10:13:09:139 [32minfo[39m: [32mProcessed 1 image files[39m
+2025-07-07 10:13:15:1315 [32minfo[39m: [32mProfile generated successfully for coco[39m
+2025-07-07 10:13:15:1315 [35mhttp[39m: [35mPOST /api/animals/generate-profile 200 5852ms[39m
+2025-07-07 10:14:14:1414 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 10:14:22:1422 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 10:14:22:1422 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 7700ms[39m
+2025-07-07 10:14:23:1423 [32minfo[39m: [32mGenerating animal profile[39m
+2025-07-07 10:14:23:1423 [32minfo[39m: [32mProcessed 2 image files[39m
+2025-07-07 10:14:29:1429 [32minfo[39m: [32mProfile generated successfully for coco[39m
+2025-07-07 10:14:29:1429 [35mhttp[39m: [35mPOST /api/animals/generate-profile 200 6123ms[39m
+2025-07-07 10:14:30:1430 [35mhttp[39m: [35mGET /uploads/1751883263653-146693729.jpg 200 3ms[39m
+2025-07-07 10:14:30:1430 [35mhttp[39m: [35mGET /uploads/1751883263641-687989967.jpg 200 4ms[39m
+2025-07-07 10:16:53:1653 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 10:16:58:1658 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 10:16:58:1658 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 5576ms[39m
+2025-07-07 10:17:03:173 [32minfo[39m: [32mGenerating animal profile[39m
+2025-07-07 10:17:03:173 [32minfo[39m: [32mProcessed 2 image files[39m
+2025-07-07 10:17:06:176 [32minfo[39m: [32mProfile generated successfully for coco[39m
+2025-07-07 10:17:06:176 [35mhttp[39m: [35mPOST /api/animals/generate-profile 200 3221ms[39m
+2025-07-07 10:18:25:1825 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 10:18:31:1831 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 10:18:31:1831 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 5519ms[39m
+2025-07-07 10:18:33:1833 [32minfo[39m: [32mGenerating animal profile[39m
+2025-07-07 10:18:33:1833 [32minfo[39m: [32mProcessed 1 image files[39m
+2025-07-07 10:18:37:1837 [32minfo[39m: [32mProfile generated successfully for coco[39m
+2025-07-07 10:18:37:1837 [35mhttp[39m: [35mPOST /api/animals/generate-profile 200 4351ms[39m
+2025-07-07 10:18:37:1837 [35mhttp[39m: [35mGET /uploads/1751883513011-533861121.jpg 200 4ms[39m
+2025-07-07 10:20:00:200 [35mhttp[39m: [35mGET /uploads/1751883513011-533861121.jpg 304 4ms[39m
+2025-07-07 10:27:18:2718 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 10:27:25:2725 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 10:27:25:2725 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 6850ms[39m
+2025-07-07 10:27:27:2727 [32minfo[39m: [32mGenerating animal profile[39m
+2025-07-07 10:27:27:2727 [32minfo[39m: [32mProcessed 1 image files[39m
+2025-07-07 10:27:32:2732 [32minfo[39m: [32mProfile generated successfully for coco[39m
+2025-07-07 10:27:32:2732 [35mhttp[39m: [35mPOST /api/animals/generate-profile 200 4798ms[39m
+2025-07-07 10:27:32:2732 [35mhttp[39m: [35mGET /uploads/1751884047285-743114957.jpg 200 3ms[39m
+2025-07-07 10:27:34:2734 [35mhttp[39m: [35mGET /uploads/1751884047285-743114957.jpg 304 1ms[39m
+2025-07-07 10:27:34:2734 [35mhttp[39m: [35mGET /uploads/1751884047285-743114957.jpg 304 2ms[39m
+2025-07-07 10:28:07:287 [35mhttp[39m: [35mGET /uploads/1751884047285-743114957.jpg 304 1ms[39m
+2025-07-07 10:28:07:287 [35mhttp[39m: [35mGET /uploads/1751884047285-743114957.jpg 304 0ms[39m
+2025-07-07 10:29:09:299 [37mdebug[39m: [37mSending request to OpenAI Vision API[39m
+2025-07-07 10:29:14:2914 [37mdebug[39m: [37mReceived analysis:[39m
+2025-07-07 10:29:14:2914 [35mhttp[39m: [35mPOST /api/animals/analyze-image 200 4948ms[39m
+2025-07-07 10:29:15:2915 [32minfo[39m: [32mGenerating animal profile[39m
+2025-07-07 10:29:15:2915 [32minfo[39m: [32mProcessed 2 image files[39m
+2025-07-07 10:29:21:2921 [32minfo[39m: [32mProfile generated successfully for coco[39m
+2025-07-07 10:29:21:2921 [35mhttp[39m: [35mPOST /api/animals/generate-profile 200 5786ms[39m
+2025-07-07 10:29:22:2922 [35mhttp[39m: [35mGET /uploads/1751884155911-960550160.jpg 200 2ms[39m
+2025-07-07 10:29:22:2922 [35mhttp[39m: [35mGET /uploads/1751884155920-54111289.jpg 200 2ms[39m
+2025-07-07 10:29:26:2926 [35mhttp[39m: [35mGET /uploads/1751884155911-960550160.jpg 304 1ms[39m
+2025-07-07 10:29:26:2926 [35mhttp[39m: [35mGET /uploads/1751884155920-54111289.jpg 304 1ms[39m
+2025-07-07 10:29:27:2927 [35mhttp[39m: [35mGET /uploads/1751884155920-54111289.jpg 304 1ms[39m
+2025-07-07 10:29:27:2927 [35mhttp[39m: [35mGET /uploads/1751884155911-960550160.jpg 304 2ms[39m
+2025-07-07 10:30:38:3038 [35mhttp[39m: [35mGET /uploads/1751884155920-54111289.jpg 304 1ms[39m
+2025-07-07 10:30:38:3038 [35mhttp[39m: [35mGET /uploads/1751884155911-960550160.jpg 304 1ms[39m
+2025-07-07 10:30:38:3038 [35mhttp[39m: [35mGET /uploads/1751884155920-54111289.jpg 304 1ms[39m
+2025-07-07 10:30:38:3038 [35mhttp[39m: [35mGET /uploads/1751884155911-960550160.jpg 304 0ms[39m
+2025-07-07 10:33:01:331 [35mhttp[39m: [35mGET /uploads/1751884155920-54111289.jpg 304 7ms[39m
+2025-07-07 10:33:01:331 [35mhttp[39m: [35mGET /uploads/1751884155911-960550160.jpg 304 1ms[39m
+2025-07-07 10:33:02:332 [35mhttp[39m: [35mGET /uploads/1751884155920-54111289.jpg 304 1ms[39m
+2025-07-07 10:33:02:332 [35mhttp[39m: [35mGET /uploads/1751884155911-960550160.jpg 304 1ms[39m

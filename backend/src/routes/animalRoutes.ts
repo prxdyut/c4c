@@ -1,14 +1,17 @@
-import { Router } from 'express';
-import { AnimalController } from '../controllers/AnimalController';
+import express from 'express';
+import { AnimalController, upload } from '../controllers/AnimalController';
 
-const router = Router();
+const router = express.Router();
 const animalController = new AnimalController();
 
 // Create a new animal profile
-router.post('/', animalController.create.bind(animalController));
+router.post('/', upload, animalController.create.bind(animalController));
 
-// Generate an adoption profile using HuggingFace
-router.post('/generate-profile', animalController.generateProfile.bind(animalController));
+// Generate profile text
+router.post('/generate-profile', upload, animalController.generateProfile.bind(animalController));
+
+// Analyze image and extract details
+router.post('/analyze-image', upload, animalController.analyzeImage.bind(animalController));
 
 // Get all animals
 router.get('/', animalController.getAll.bind(animalController));

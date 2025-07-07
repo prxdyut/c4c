@@ -3,7 +3,7 @@ import AnimalForm, { AnimalData } from '@/components/AnimalForm';
 import ProfileOutput from '@/components/ProfileOutput';
 import Footer from '@/components/Footer';
 import { useToast } from '@/hooks/use-toast';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { AnimalService } from '@/services/animalService';
 
@@ -12,6 +12,8 @@ const CreateProfile = () => {
   const [generatedProfile, setGeneratedProfile] = useState<string>('');
   const { toast } = useToast();
   const [fadeIn, setFadeIn] = useState(false);
+  const location = useLocation();
+  const analysisData = location.state?.analysis;
 
   useEffect(() => {
     setFadeIn(true);
@@ -21,7 +23,12 @@ const CreateProfile = () => {
     setIsLoading(true);
     try {
       const animalService = AnimalService.getInstance();
-      const response = await animalService.generateProfile(data);
+      const response = await animalService.generateProfile({
+        ...data,
+        type: data.type || '',
+        temperament: data.temperament || '',
+        backstory: data.backstory + (analysisData ? `\n\nAI Analysis: ${analysisData}` : '')
+      });
       setGeneratedProfile(response.data.generatedProfile);
       toast({
         title: 'Profile Generated!',
@@ -58,7 +65,14 @@ const CreateProfile = () => {
       {/* Form Section */}
       <div className="relative py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <AnimalForm onGenerate={generateProfile} isLoading={isLoading} />
+          <AnimalForm 
+            onGenerate={generateProfile} 
+            isLoading={isLoading}
+            initialData={{
+              type: analysisData || '',
+              temperament: analysisData || '',
+            }}
+          />
         </div>
       </div>
       {/* Output Section */}
