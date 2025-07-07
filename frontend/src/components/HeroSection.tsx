@@ -1,14 +1,22 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Heart, PawPrint, Sparkles } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import BlurText from './blurtext';
 
 const HeroSection: React.FC = () => {
   const navigate = useNavigate();
+  const [fade, setFade] = useState(false);
 
   const handleAnimationComplete = () => {
     // You can add any logic here if needed after animation completes
+  };
+
+  const handleStartClick = () => {
+    setFade(true);
+    setTimeout(() => {
+      navigate('/create');
+    }, 500); // Duration matches the fade-out transition
   };
 
   return (
@@ -30,18 +38,8 @@ const HeroSection: React.FC = () => {
       </div>
 
       {/* Main content */}
-      <div className="relative z-20 text-center px-4 max-w-6xl mx-auto">
+      <div className={`relative z-20 text-center px-4 max-w-6xl mx-auto transition-opacity duration-500 ${fade ? 'opacity-0' : 'opacity-100'}`}>
         {/* Icon */}
-        <div className="mb-8 flex justify-center">
-          <div className="relative">
-            <div className="bg-white/20 backdrop-blur-sm p-6 rounded-full border border-white/30 soft-shadow hover-lift">
-              <Heart className="w-16 h-16 text-red-500" />
-            </div>
-            <div className="absolute -top-2 -right-2">
-              <Sparkles className="w-6 h-6 text-yellow-400" />
-            </div>
-          </div>
-        </div>
 
         {/* Main heading */}
         <BlurText
@@ -50,7 +48,7 @@ const HeroSection: React.FC = () => {
           animateBy="words"
           direction="top"
           onAnimationComplete={handleAnimationComplete}
-          className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-white"
+          className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-white w-full justify-center"
         />
 
         {/* Subtitle */}
@@ -62,7 +60,7 @@ const HeroSection: React.FC = () => {
         {/* CTA Button */}
         <div className="mb-16">
           <button 
-            onClick={() => navigate('/create')}
+            onClick={handleStartClick}
             className="nature-button text-white px-8 py-4 rounded-full text-lg font-semibold hover-lift"
           >
             <PawPrint className="inline-block w-6 h-6 mr-2" />
