@@ -2,9 +2,15 @@
 import React from 'react';
 import { Heart, PawPrint, Sparkles } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import BlurText from './blurtext';
 
 const HeroSection: React.FC = () => {
   const navigate = useNavigate();
+
+  const handleAnimationComplete = () => {
+    // You can add any logic here if needed after animation completes
+  };
+
   return (
     <div className="nature-hero relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Video background */}
@@ -38,13 +44,14 @@ const HeroSection: React.FC = () => {
         </div>
 
         {/* Main heading */}
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-white">
-          Generate Heartfelt
-          <br />
-          Animal Adoption
-          <br />
-          Profiles
-        </h1>
+        <BlurText
+          text="Generate Heartfelt Animal Adoption Profiles"
+          delay={150}
+          animateBy="words"
+          direction="top"
+          onAnimationComplete={handleAnimationComplete}
+          className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-white"
+        />
 
         {/* Subtitle */}
         <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto mb-12 leading-relaxed">
