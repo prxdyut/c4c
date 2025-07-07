@@ -9,6 +9,7 @@ import AnimalForm, { AnimalData } from "./components/AnimalForm";
 import ProfileOutput from "./components/ProfileOutput";
 import CreateProfile from "./pages/CreateProfile";
 import React, { useState, useEffect } from 'react';
+import CreativeLoader from "./components/CreativeLoader";
 
 const queryClient = new QueryClient();
 
@@ -21,14 +22,7 @@ const App = () => {
 
   return (
     <>
-      {loading && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black transition-opacity duration-700 opacity-100">
-          <div className="flex flex-col items-center">
-            <div className="w-16 h-16 border-4 border-white border-t-transparent rounded-full animate-spin mb-4"></div>
-            <span className="text-white text-xl font-semibold tracking-wide">Loading...</span>
-          </div>
-        </div>
-      )}
+      {loading && <CreativeLoader />}
       <div className={loading ? 'opacity-0 pointer-events-none' : 'opacity-100 transition-opacity duration-700'}>
         <QueryClientProvider client={queryClient}>
           <TooltipProvider>
