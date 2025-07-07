@@ -1,0 +1,111 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Warm, animal-friendly color palette for the adoption app */
+
+@layer base {
+  :root {
+    --background: 49 29% 97%;
+    --foreground: 36 45% 15%;
+
+    --card: 49 29% 98%;
+    --card-foreground: 36 45% 15%;
+
+    --popover: 49 29% 98%;
+    --popover-foreground: 36 45% 15%;
+
+    --primary: 36 77% 49%;
+    --primary-foreground: 49 29% 97%;
+
+    --secondary: 207 89% 86%;
+    --secondary-foreground: 207 89% 25%;
+
+    --muted: 49 29% 94%;
+    --muted-foreground: 36 45% 45%;
+
+    --accent: 42 87% 55%;
+    --accent-foreground: 42 87% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 49 29% 87%;
+    --input: 49 29% 87%;
+    --ring: 36 77% 49%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 49 29% 97%;
+    --sidebar-foreground: 36 45% 25%;
+    --sidebar-primary: 36 77% 49%;
+    --sidebar-primary-foreground: 49 29% 97%;
+    --sidebar-accent: 49 29% 94%;
+    --sidebar-accent-foreground: 36 45% 25%;
+    --sidebar-border: 49 29% 87%;
+    --sidebar-ring: 36 77% 49%;
+  }
+
+  .dark {
+    --background: 36 45% 8%;
+    --foreground: 49 29% 97%;
+
+    --card: 36 45% 8%;
+    --card-foreground: 49 29% 97%;
+
+    --popover: 36 45% 8%;
+    --popover-foreground: 49 29% 97%;
+
+    --primary: 36 77% 49%;
+    --primary-foreground: 36 45% 8%;
+
+    --secondary: 207 89% 15%;
+    --secondary-foreground: 207 89% 86%;
+
+    --muted: 36 45% 15%;
+    --muted-foreground: 49 29% 65%;
+
+    --accent: 42 87% 35%;
+    --accent-foreground: 42 87% 85%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 36 45% 15%;
+    --input: 36 45% 15%;
+    --ring: 36 77% 49%;
+
+    --sidebar-background: 36 45% 8%;
+    --sidebar-foreground: 49 29% 87%;
+    --sidebar-primary: 36 77% 49%;
+    --sidebar-primary-foreground: 36 45% 8%;
+    --sidebar-accent: 36 45% 15%;
+    --sidebar-accent-foreground: 49 29% 87%;
+    --sidebar-border: 36 45% 15%;
+    --sidebar-ring: 36 77% 49%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+/* Custom gradient backgrounds for the hero section */
+.hero-gradient {
+  background: linear-gradient(135deg, 
+    hsl(49, 29%, 97%) 0%, 
+    hsl(207, 89%, 95%) 50%, 
+    hsl(42, 87%, 95%) 100%);
+}
+
+/* Soft shadow for cards */
+.soft-shadow {
+  box-shadow: 0 4px 20px rgba(213, 160, 84, 0.1);
+}
