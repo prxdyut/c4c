@@ -1,0 +1,69 @@
+2025-07-07 07:55:46:5546 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 07:55:46:5546 [31merror[39m: [31mPOST /api/animals/analyze-image 500 473ms[39m
+2025-07-07 07:59:50:5950 [31merror[39m: [31mOpenAI API error:[39m
+2025-07-07 07:59:50:5950 [31merror[39m: [31mError in analyzeLocalImage:[39m
+2025-07-07 07:59:50:5950 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 07:59:50:5950 [31merror[39m: [31mPOST /api/animals/analyze-image 500 569ms[39m
+2025-07-07 08:00:16:016 [31merror[39m: [31mOpenAI API error:[39m
+2025-07-07 08:00:16:016 [31merror[39m: [31mError in analyzeLocalImage:[39m
+2025-07-07 08:00:16:016 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:00:16:016 [31merror[39m: [31mPOST /api/animals/analyze-image 500 465ms[39m
+2025-07-07 08:02:01:21 [31merror[39m: [31mOpenAI API error:[39m
+2025-07-07 08:02:01:21 [31merror[39m: [31mError in analyzeLocalImage:[39m
+2025-07-07 08:02:01:21 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:02:01:21 [31merror[39m: [31mPOST /api/animals/analyze-image 500 548ms[39m
+2025-07-07 08:03:07:37 [31merror[39m: [31mOpenAI API error:[39m
+2025-07-07 08:03:07:37 [31merror[39m: [31mError in analyzeLocalImage:[39m
+2025-07-07 08:03:07:37 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:03:07:37 [31merror[39m: [31mPOST /api/animals/analyze-image 500 373ms[39m
+2025-07-07 08:04:43:443 [31merror[39m: [31mOpenAI API error:[39m
+2025-07-07 08:04:43:443 [31merror[39m: [31mError in analyzeLocalImage:[39m
+2025-07-07 08:04:43:443 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:04:43:443 [31merror[39m: [31mPOST /api/animals/analyze-image 500 1072ms[39m
+2025-07-07 08:05:07:57 [31merror[39m: [31mOpenAI API error:[39m
+2025-07-07 08:05:07:57 [31merror[39m: [31mError in analyzeLocalImage:[39m
+2025-07-07 08:05:07:57 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:05:07:57 [31merror[39m: [31mPOST /api/animals/analyze-image 500 1721ms[39m
+2025-07-07 08:05:39:539 [31merror[39m: [31mError parsing OpenAI response:[39m
+2025-07-07 08:05:39:539 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:05:39:539 [31merror[39m: [31mPOST /api/animals/analyze-image 500 2399ms[39m
+2025-07-07 08:09:33:933 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:09:33:933 [31merror[39m: [31mPOST /api/animals/analyze-image 500 1817ms[39m
+2025-07-07 08:10:55:1055 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:10:55:1055 [31merror[39m: [31mPOST /api/animals/analyze-image 500 1656ms[39m
+2025-07-07 08:17:48:1748 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:17:48:1748 [31merror[39m: [31mPOST /api/animals/analyze-image 500 2396ms[39m
+2025-07-07 08:18:10:1810 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:18:10:1810 [31merror[39m: [31mPOST /api/animals/analyze-image 500 3232ms[39m
+2025-07-07 08:19:16:1916 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:19:16:1916 [31merror[39m: [31mPOST /api/animals/analyze-image 500 2524ms[39m
+2025-07-07 08:24:50:2450 [31merror[39m: [31mError in analyzeLocalImage:[39m
+2025-07-07 08:24:50:2450 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:24:50:2450 [31merror[39m: [31mPOST /api/animals/analyze-image 500 31ms[39m
+2025-07-07 08:25:33:2533 [31merror[39m: [31mError in analyzeLocalImage:[39m
+2025-07-07 08:25:33:2533 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:25:33:2533 [31merror[39m: [31mPOST /api/animals/analyze-image 500 28ms[39m
+2025-07-07 08:25:56:2556 [31merror[39m: [31mError in analyzeLocalImage:[39m
+2025-07-07 08:25:56:2556 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:25:56:2556 [31merror[39m: [31mPOST /api/animals/analyze-image 500 554ms[39m
+2025-07-07 08:26:30:2630 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:26:30:2630 [31merror[39m: [31mPOST /api/animals/analyze-image 500 2978ms[39m
+2025-07-07 08:26:52:2652 [31merror[39m: [31mError analyzing image:[39m
+2025-07-07 08:26:52:2652 [31merror[39m: [31mPOST /api/animals/analyze-image 500 5569ms[39m
+2025-07-07 08:44:33:4433 [31merror[39m: [31mUnhandled error:[39m
+2025-07-07 08:44:33:4433 [31merror[39m: [31mPOST /api/animals/analyze-image 500 11ms[39m
+2025-07-07 09:08:09:89 [31merror[39m: [31mError in analyzeLocalImage:[39m
+2025-07-07 09:08:09:89 [31merror[39m: [31mError analyzing images:[39m
+2025-07-07 09:08:09:89 [31merror[39m: [31mPOST /api/animals/analyze-image 500 58ms[39m
+2025-07-07 09:46:03:463 [31merror[39m: [31mError generating profile:[39m
+2025-07-07 09:46:03:463 [31merror[39m: [31mPOST /api/animals/generate-profile 500 2056ms[39m
+2025-07-07 09:47:54:4754 [31merror[39m: [31mError generating profile:[39m
+2025-07-07 09:47:54:4754 [31merror[39m: [31mPOST /api/animals/generate-profile 500 3006ms[39m
+2025-07-07 09:48:50:4850 [31merror[39m: [31mError generating profile:[39m
+2025-07-07 09:48:50:4850 [31merror[39m: [31mPOST /api/animals/generate-profile 500 2575ms[39m
+2025-07-07 09:50:29:5029 [31merror[39m: [31mError generating profile:[39m
+2025-07-07 09:50:29:5029 [31merror[39m: [31mPOST /api/animals/generate-profile 500 3550ms[39m
+2025-07-07 09:54:01:541 [31merror[39m: [31mError generating profile:[39m
+2025-07-07 09:54:01:541 [31merror[39m: [31mPOST /api/animals/generate-profile 500 2807ms[39m
+2025-07-07 09:54:22:5422 [31merror[39m: [31mError generating profile:[39m
+2025-07-07 09:54:22:5422 [31merror[39m: [31mPOST /api/animals/generate-profile 500 2591ms[39m

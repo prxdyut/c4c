@@ -5,10 +5,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import AnimalForm, { AnimalData } from "./components/AnimalForm";
-import ProfileOutput from "./components/ProfileOutput";
 import CreateProfile from "./pages/CreateProfile";
-import React, { useState, useEffect } from 'react';
+import AnalyzeImage from "./pages/AnalyzeImage";
+import CreateAnimalProfile from "./pages/CreateAnimalProfile";
+import { useState, useEffect } from 'react';
 
 const queryClient = new QueryClient();
 
@@ -38,6 +38,8 @@ const App = () => {
               <Routes>
                 <Route path="/" element={<Index />} />
                 <Route path="/create" element={<CreateProfile />} />
+                <Route path="/analyze" element={<AnalyzeImage />} />
+                <Route path="/create-animal" element={<CreateAnimalProfile />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>

@@ -1,200 +1,216 @@
+import React from 'react';
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import * as z from "zod";
+import { Button } from "@/components/ui/button";
+import {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Loader2 } from "lucide-react";
 
-import React, { useState } from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Button } from '@/components/ui/button';
-import { Heart, Dog, Sparkles, Leaf } from 'lucide-react';
+const formSchema = z.object({
+  name: z.string().min(2, {
+    message: "Name must be at least 2 characters.",
+  }),
+  type: z.string().min(2, {
+    message: "Animal type must be at least 2 characters.",
+  }),
+  age: z.string().min(1, {
+    message: "Age is required.",
+  }),
+  gender: z.string().optional(),
+  temperament: z.string().optional(),
+  healthNotes: z.string().optional(),
+  backstory: z.string().optional(),
+  idealHome: z.string().optional(),
+});
 
-interface AnimalFormProps {
+export type AnimalData = z.infer<typeof formSchema>;
+
+export interface AnimalFormProps {
   onGenerate: (data: AnimalData) => void;
-  isLoading: boolean;
+  isLoading?: boolean;
+  initialData?: Partial<AnimalData>;
 }
 
-export interface AnimalData {
-  name: string;
-  type: string;
-  age: string;
-  gender: string;
-  temperament: string;
-  healthNotes: string;
-  backstory: string;
-  idealHome: string;
-}
-
-const AnimalForm: React.FC<AnimalFormProps> = ({ onGenerate, isLoading }) => {
-  const [formData, setFormData] = useState<AnimalData>({
-    name: '',
-    type: '',
-    age: '',
-    gender: '',
-    temperament: '',
-    healthNotes: '',
-    backstory: '',
-    idealHome: ''
+const AnimalForm: React.FC<AnimalFormProps> = ({ onGenerate, isLoading = false, initialData = {} }) => {
+  const form = useForm<AnimalData>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: "",
+      type: initialData.type || "",
+      age: "",
+      gender: "",
+      temperament: initialData.temperament || "",
+      healthNotes: "",
+      backstory: "",
+      idealHome: "",
+    },
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    onGenerate(formData);
-  };
-
-  const handleInputChange = (field: keyof AnimalData, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
-  };
-
-  const isFormValid = formData.name && formData.type && formData.age && formData.temperament;
+  function onSubmit(values: AnimalData) {
+    onGenerate(values);
+  }
 
   return (
-    <div data-section="form" className="w-full">
-      <Card className="w-full max-w-3xl mx-auto bg-white rounded-2xl shadow-lg border border-gray-200">
-        <CardHeader className="text-center pb-6">
-          <div className="flex justify-center mb-4">
-            <div className="bg-gray-100 p-4 rounded-full border border-gray-200">
-              <Heart className="text-red-500 w-8 h-8" />
-            </div>
-          </div>
-          <CardTitle className="text-2xl font-bold text-foreground mb-2">
-            Create Your Adoption Profile
-          </CardTitle>
-          <p className="text-muted-foreground text-base max-w-2xl mx-auto">
-            Fill in the details below to generate a heartfelt adoption profile that will help find a loving home
-          </p>
-        </CardHeader>
-        <CardContent>
-          <form onSubmit={handleSubmit} className="space-y-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                <Label htmlFor="name" className="text-base font-medium text-gray-700">
-                  Animal Name *
-                </Label>
-                <Input
-                  id="name"
-                  value={formData.name}
-                  onChange={(e) => handleInputChange('name', e.target.value)}
-                  placeholder="Enter animal's name"
-                  className="bg-white border border-gray-300 rounded-md focus:border-blue-400 focus:ring-blue-100 transition-all duration-200"
-                  required
+    <Form {...form}>
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 bg-card p-6 rounded-lg shadow-lg max-w-2xl mx-auto">
+        <div className="space-y-2 text-center">
+          <h2 className="text-3xl font-bold">Create Adoption Profile</h2>
+          <p className="text-muted-foreground">Fill in the details to generate a compelling adoption profile.</p>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-2">
+          <FormField
+            control={form.control}
+            name="name"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Name</FormLabel>
+                <FormControl>
+                  <Input placeholder="Pet's name" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+
+          <FormField
+            control={form.control}
+            name="type"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Type</FormLabel>
+                <FormControl>
+                  <Input placeholder="e.g., Dog, Cat, etc." {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-2">
+          <FormField
+            control={form.control}
+            name="age"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Age</FormLabel>
+                <FormControl>
+                  <Input placeholder="e.g., 2 years" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+
+          <FormField
+            control={form.control}
+            name="gender"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Gender (Optional)</FormLabel>
+                <FormControl>
+                  <Input placeholder="e.g., Male, Female" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+        </div>
+
+        <FormField
+          control={form.control}
+          name="temperament"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Temperament (Optional)</FormLabel>
+              <FormControl>
+                <Input placeholder="e.g., Friendly, Playful, Calm" {...field} />
+              </FormControl>
+              <FormDescription>
+                Describe the pet's personality traits
+              </FormDescription>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
+          name="healthNotes"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Health Notes (Optional)</FormLabel>
+              <FormControl>
+                <Textarea
+                  placeholder="Any important health information..."
+                  className="resize-none"
+                  {...field}
                 />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="type" className="text-base font-medium text-gray-700">
-                  Animal Type *
-                </Label>
-                <Select value={formData.type} onValueChange={(value) => handleInputChange('type', value)}>
-                  <SelectTrigger className="bg-white border border-gray-300 rounded-md focus:border-blue-400 focus:ring-blue-100 transition-all duration-200">
-                    <SelectValue placeholder="Select animal type" />
-                  </SelectTrigger>
-                  <SelectContent className="bg-white border border-gray-200">
-                    <SelectItem value="dog">Dog</SelectItem>
-                    <SelectItem value="cat">Cat</SelectItem>
-                    <SelectItem value="puppy">Puppy</SelectItem>
-                    <SelectItem value="kitten">Kitten</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="age" className="text-base font-medium text-gray-700">
-                  Age *
-                </Label>
-                <Input
-                  id="age"
-                  value={formData.age}
-                  onChange={(e) => handleInputChange('age', e.target.value)}
-                  placeholder="e.g., 2 years, 6 months"
-                  className="bg-white border border-gray-300 rounded-md focus:border-blue-400 focus:ring-blue-100 transition-all duration-200"
-                  required
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
+          name="backstory"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Backstory (Optional)</FormLabel>
+              <FormControl>
+                <Textarea
+                  placeholder="Share the pet's background story..."
+                  className="resize-none"
+                  {...field}
                 />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="gender" className="text-base font-medium text-gray-700">
-                  Gender
-                </Label>
-                <Select value={formData.gender} onValueChange={(value) => handleInputChange('gender', value)}>
-                  <SelectTrigger className="bg-white border border-gray-300 rounded-md focus:border-blue-400 focus:ring-blue-100 transition-all duration-200">
-                    <SelectValue placeholder="Select gender" />
-                  </SelectTrigger>
-                  <SelectContent className="bg-white border border-gray-200">
-                    <SelectItem value="male">Male</SelectItem>
-                    <SelectItem value="female">Female</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="temperament" className="text-base font-medium text-gray-700">
-                Temperament & Personality *
-              </Label>
-              <Input
-                id="temperament"
-                value={formData.temperament}
-                onChange={(e) => handleInputChange('temperament', e.target.value)}
-                placeholder="e.g., Friendly, playful, calm with children"
-                className="bg-white border border-gray-300 rounded-md focus:border-blue-400 focus:ring-blue-100 transition-all duration-200"
-                required
-              />
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="healthNotes" className="text-base font-medium text-gray-700">
-                Health Notes
-              </Label>
-              <Textarea
-                id="healthNotes"
-                value={formData.healthNotes}
-                onChange={(e) => handleInputChange('healthNotes', e.target.value)}
-                placeholder="Any health conditions, vaccinations, special needs..."
-                className="bg-white border border-gray-300 rounded-md focus:border-blue-400 focus:ring-blue-100 transition-all duration-200 min-h-[100px] resize-none"
-              />
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="backstory" className="text-base font-medium text-gray-700">
-                Rescue Story
-              </Label>
-              <Textarea
-                id="backstory"
-                value={formData.backstory}
-                onChange={(e) => handleInputChange('backstory', e.target.value)}
-                placeholder="Share their rescue story or background..."
-                className="bg-white border border-gray-300 rounded-md focus:border-blue-400 focus:ring-blue-100 transition-all duration-200 min-h-[120px] resize-none"
-              />
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="idealHome" className="text-base font-medium text-gray-700">
-                Ideal Home
-              </Label>
-              <Textarea
-                id="idealHome"
-                value={formData.idealHome}
-                onChange={(e) => handleInputChange('idealHome', e.target.value)}
-                placeholder="Describe the perfect home for this animal..."
-                className="bg-white border border-gray-300 rounded-md focus:border-blue-400 focus:ring-blue-100 transition-all duration-200 min-h-[100px] resize-none"
-              />
-            </div>
-            <div className="pt-4">
-              <Button
-                type="submit"
-                disabled={!isFormValid || isLoading}
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg text-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {isLoading ? (
-                  <div className="flex items-center gap-3">
-                    <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                    <span>Creating Your Profile...</span>
-                  </div>
-                ) : (
-                  <div className="flex items-center gap-3">
-                    <Dog className="w-6 h-6" />
-                    <span>Generate Adoption Profile</span>
-                  </div>
-                )}
-              </Button>
-            </div>
-          </form>
-        </CardContent>
-      </Card>
-    </div>
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
+          name="idealHome"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Ideal Home (Optional)</FormLabel>
+              <FormControl>
+                <Textarea
+                  placeholder="Describe the perfect home for this pet..."
+                  className="resize-none"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <Button type="submit" className="w-full" disabled={isLoading}>
+          {isLoading ? (
+            <>
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+              Generating...
+            </>
+          ) : (
+            'Generate Profile'
+          )}
+        </Button>
+      </form>
+    </Form>
   );
 };
 
