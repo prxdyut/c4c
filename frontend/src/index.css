@@ -1,29 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Warm, animal-friendly color palette for the adoption app */
+/* Nature-inspired color palette for Pawsome Profile Generator */
 
 @layer base {
   :root {
-    --background: 49 29% 97%;
-    --foreground: 36 45% 15%;
+    --background: 120 15% 98%;
+    --foreground: 25 35% 15%;
 
-    --card: 49 29% 98%;
-    --card-foreground: 36 45% 15%;
+    --card: 120 15% 99%;
+    --card-foreground: 25 35% 15%;
 
-    --popover: 49 29% 98%;
-    --popover-foreground: 36 45% 15%;
+    --popover: 120 15% 99%;
+    --popover-foreground: 25 35% 15%;
 
-    --primary: 36 77% 49%;
-    --primary-foreground: 49 29% 97%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 120 15% 98%;
 
-    --secondary: 207 89% 86%;
-    --secondary-foreground: 207 89% 25%;
+    --secondary: 200 85% 85%;
+    --secondary-foreground: 200 85% 25%;
 
-    --muted: 49 29% 94%;
-    --muted-foreground: 36 45% 45%;
+    --muted: 120 15% 94%;
+    --muted-foreground: 25 35% 45%;
 
     --accent: 42 87% 55%;
     --accent-foreground: 42 87% 15%;
@@ -31,40 +32,48 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 49 29% 87%;
-    --input: 49 29% 87%;
-    --ring: 36 77% 49%;
+    --border: 120 15% 87%;
+    --input: 120 15% 87%;
+    --ring: 142 76% 36%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
-    --sidebar-background: 49 29% 97%;
-    --sidebar-foreground: 36 45% 25%;
-    --sidebar-primary: 36 77% 49%;
-    --sidebar-primary-foreground: 49 29% 97%;
-    --sidebar-accent: 49 29% 94%;
-    --sidebar-accent-foreground: 36 45% 25%;
-    --sidebar-border: 49 29% 87%;
-    --sidebar-ring: 36 77% 49%;
+    --sidebar-background: 120 15% 97%;
+    --sidebar-foreground: 25 35% 25%;
+    --sidebar-primary: 142 76% 36%;
+    --sidebar-primary-foreground: 120 15% 98%;
+    --sidebar-accent: 120 15% 94%;
+    --sidebar-accent-foreground: 25 35% 25%;
+    --sidebar-border: 120 15% 87%;
+    --sidebar-ring: 142 76% 36%;
+
+    /* Nature-inspired custom colors */
+    --forest-green: 142 76% 36%;
+    --earth-brown: 25 35% 45%;
+    --sky-blue: 200 85% 75%;
+    --warm-cream: 42 87% 95%;
+    --leaf-green: 120 45% 65%;
+    --bark-brown: 25 45% 25%;
   }
 
   .dark {
-    --background: 36 45% 8%;
-    --foreground: 49 29% 97%;
+    --background: 25 35% 8%;
+    --foreground: 120 15% 97%;
 
-    --card: 36 45% 8%;
-    --card-foreground: 49 29% 97%;
+    --card: 25 35% 8%;
+    --card-foreground: 120 15% 97%;
 
-    --popover: 36 45% 8%;
-    --popover-foreground: 49 29% 97%;
+    --popover: 25 35% 8%;
+    --popover-foreground: 120 15% 97%;
 
-    --primary: 36 77% 49%;
-    --primary-foreground: 36 45% 8%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 25 35% 8%;
 
-    --secondary: 207 89% 15%;
-    --secondary-foreground: 207 89% 86%;
+    --secondary: 200 85% 15%;
+    --secondary-foreground: 200 85% 85%;
 
-    --muted: 36 45% 15%;
-    --muted-foreground: 49 29% 65%;
+    --muted: 25 35% 15%;
+    --muted-foreground: 120 15% 65%;
 
     --accent: 42 87% 35%;
     --accent-foreground: 42 87% 85%;
@@ -72,18 +81,18 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 36 45% 15%;
-    --input: 36 45% 15%;
-    --ring: 36 77% 49%;
+    --border: 25 35% 15%;
+    --input: 25 35% 15%;
+    --ring: 142 76% 36%;
 
-    --sidebar-background: 36 45% 8%;
-    --sidebar-foreground: 49 29% 87%;
-    --sidebar-primary: 36 77% 49%;
-    --sidebar-primary-foreground: 36 45% 8%;
-    --sidebar-accent: 36 45% 15%;
-    --sidebar-accent-foreground: 49 29% 87%;
-    --sidebar-border: 36 45% 15%;
-    --sidebar-ring: 36 77% 49%;
+    --sidebar-background: 25 35% 8%;
+    --sidebar-foreground: 120 15% 87%;
+    --sidebar-primary: 142 76% 36%;
+    --sidebar-primary-foreground: 25 35% 8%;
+    --sidebar-accent: 25 35% 15%;
+    --sidebar-accent-foreground: 120 15% 87%;
+    --sidebar-border: 25 35% 15%;
+    --sidebar-ring: 142 76% 36%;
   }
 }
 
@@ -93,19 +102,181 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground;
+    font-family: 'Poppins', 'Montserrat', sans-serif;
   }
 }
 
-/* Custom gradient backgrounds for the hero section */
-.hero-gradient {
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Parallax and nature-inspired backgrounds */
+.nature-hero {
   background: linear-gradient(135deg, 
-    hsl(49, 29%, 97%) 0%, 
-    hsl(207, 89%, 95%) 50%, 
+    hsl(120, 15%, 98%) 0%, 
+    hsl(200, 85%, 95%) 30%, 
+    hsl(142, 76%, 95%) 70%, 
     hsl(42, 87%, 95%) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.nature-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(142, 76%, 36%, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(200, 85%, 75%, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(42, 87%, 55%, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Floating leaves animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+.floating-leaf {
+  animation: float 6s ease-in-out infinite;
+}
+
+.floating-leaf:nth-child(2) { animation-delay: -2s; }
+.floating-leaf:nth-child(3) { animation-delay: -4s; }
+
+/* Paw print animation */
+@keyframes paw-print {
+  0% { opacity: 0; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.1); }
+  100% { opacity: 0; transform: scale(1); }
+}
+
+.paw-print {
+  animation: paw-print 3s ease-in-out infinite;
+}
+
+.paw-print:nth-child(2) { animation-delay: 1s; }
+.paw-print:nth-child(3) { animation-delay: 2s; }
+
+/* Glassmorphism effect */
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Neumorphism effect */
+.neumorphism {
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
 /* Soft shadow for cards */
 .soft-shadow {
-  box-shadow: 0 4px 20px rgba(213, 160, 84, 0.1);
+  box-shadow: 0 8px 32px rgba(142, 76, 36, 0.1);
+}
+
+/* Nature texture overlay */
+.nature-texture {
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(142, 76, 36%, 0.05) 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+/* Butterfly animation */
+@keyframes butterfly {
+  0%, 100% { transform: translateX(0) translateY(0) rotate(0deg); }
+  25% { transform: translateX(10px) translateY(-10px) rotate(5deg); }
+  50% { transform: translateX(20px) translateY(0) rotate(0deg); }
+  75% { transform: translateX(10px) translateY(10px) rotate(-5deg); }
+}
+
+.butterfly {
+  animation: butterfly 8s ease-in-out infinite;
+}
+
+/* Water ripple effect */
+@keyframes ripple {
+  0% { transform: scale(0); opacity: 1; }
+  100% { transform: scale(4); opacity: 0; }
+}
+
+.ripple {
+  animation: ripple 2s ease-out infinite;
+}
+
+/* Parallax scroll effect */
+.parallax {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Handwritten font effect */
+.handwritten {
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+/* Micro-interactions */
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(142, 76, 36, 0.15);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, hsl(142, 76%, 36%), hsl(200, 85%, 75%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Nature-inspired button */
+.nature-button {
+  background: linear-gradient(135deg, hsl(142, 76%, 36%), hsl(142, 76%, 46%));
+  border: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.nature-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.nature-button:hover::before {
+  left: 100%;
+}
+
+.nature-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(142, 76, 36, 0.3);
 }

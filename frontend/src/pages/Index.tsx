@@ -5,11 +5,13 @@ import AnimalForm, { AnimalData } from '@/components/AnimalForm';
 import ProfileOutput from '@/components/ProfileOutput';
 import Footer from '@/components/Footer';
 import { useToast } from '@/hooks/use-toast';
+import { useNavigate } from 'react-router-dom';
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [generatedProfile, setGeneratedProfile] = useState<string>('');
   const { toast } = useToast();
+  const navigate = useNavigate();
 
   const generateProfile = async (data: AnimalData) => {
     setIsLoading(true);
@@ -77,22 +79,17 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative">
+      {/* Global background texture */}
+      <div className="fixed inset-0 nature-texture opacity-3 pointer-events-none" />
+
+      {/* Hero Section */}
       <HeroSection />
-      
-      <div className="py-12 px-4">
-        <div className="max-w-4xl mx-auto space-y-12">
-          <AnimalForm onGenerate={generateProfile} isLoading={isLoading} />
-          
-          {generatedProfile && (
-            <div id="profile-output">
-              <ProfileOutput profile={generatedProfile} />
-            </div>
-          )}
-        </div>
+
+      {/* Footer */}
+      <div>
+        <Footer />
       </div>
-      
-      <Footer />
     </div>
   );
 };
